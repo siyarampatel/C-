@@ -152,18 +152,32 @@
 //     printf("%d",f);
 // }
 
-int main(){
-    int max=0;
-    int a[]={1,5,3,6,7,7,3,4,5,9,3,2,5,6,4};
-     int n = sizeof(a) / sizeof(a[0]);
-    int k;
-    for(int i=0; i<n; i++){
-        for(int j=1; j<n; j++){
-           k =  a[i]+a[j];
-            if(k>max){
-                max=k;
-            }
-            }
-        }
-        printf("%d",k);
-}
+
+// int main(){
+//     int a[][] = {(1,2,3),(2,4,3),(6,4,5)};
+//     //int n = sizeof(a) / sizeof(a[0]);
+//     for(int i=0; i<2; i++){
+//         for(int j=0; j<2; j++){
+//             printf("%d",a[i][j]);
+//         }
+//     }
+// }
+
+// int main(){
+//     // int max=0;
+//     int a[]={1,5,3,6,7,7,3,4,5,9,3,2,5,6,4};
+//      int n = sizeof(a) / sizeof(a[0]);
+//     int k;
+//     int max = 0;
+//     for(int i=0; i<n; i++){
+//         for(int j=i+1; j<n; j++){
+//            k =  a[i]+a[j];                        
+//             if(k>max){
+//                 max=k; 
+              
+//             }
+//             }
+//         }
+//         printf("%d",max);
+// }
+ 
