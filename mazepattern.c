@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 int main() {
     int k;
     scanf("%d", &k);
@@ -14,9 +15,12 @@ int main() {
             int right = size - 1 - j;
 
             int min = top;
-            if (left < min) min = left;
-            if (bottom < min) min = bottom;
-            if (right < min) min = right;
+            if (left < min) 
+            min = left;
+            if (bottom < min) 
+            min = bottom;
+            if (right < min)
+             min = right;
 
             printf("%d ", k - min);  // print value
         }
