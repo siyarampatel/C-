@@ -69,10 +69,21 @@
 //         }
 // } 
 
+// int main(){
+//     char a []="siyaram";
+//     for(int i=0; a[i]!='\0'; i++){
+//         for(int j=i+1; a[j]!='\0'; j++){
+//         if(a[i]==a[j]){
+//             printf("The duplicates are: %c",a[i]);
+//             break;
+//         }
+//         }
+//     }
+// }
+
 int main(){
-    char a [100];
-    printf("Enter an string");
+    char a[50];
+    printf("Enter a string: ");;
     scanf("%s",a);
-    int n = strlen(a);
-    
+    printf("%s",a);
 }
