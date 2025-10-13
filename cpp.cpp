@@ -1,6 +1,6 @@
 //access specifiers 
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 // class one{
 //     int a = 10;
 //     friend class two;
@@ -27,5 +27,12 @@ using namespace std;
 // void add(One obj1, Two obj){
 //     cout<<"sum of two objects fromm defination of class one and two is: "<<obj1.data+obj2
 // }
+
+#include<iostream>
+using namespace std;
+class myfriend(){
+
+};
+
 
 
