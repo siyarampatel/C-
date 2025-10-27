@@ -14,6 +14,7 @@ int find_nth_term(int n, int a, int b, int c) {
     find_nth_term(n-3,a,b,c);
     
     
+    
   
 }
 

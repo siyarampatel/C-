@@ -241,7 +241,7 @@
 //     for(int i=0; i<n; i++){
 //         scanf("%d",&arr[i]);
 //     }
-//     int temp = arr[n-1];
+//     int temp = arr[n-1];       // storing 
 //     for(int i=n-1; i>0; i--){
 //         arr[i]=arr[i-1];
 //     }
@@ -251,3 +251,37 @@
 //     }
 // }
 
+//Q8 => Kadane's Algorithm - Maximum Subarray Sum
+
+//BRUTE FORCE APPROACH(all posibilities)
+#include<stdio.h>
+int main(){
+    int arr [111];
+    int sum[100];
+    int n;
+    printf("Enter no. of elements:");
+    scanf("%d",&n);
+    printf("Enter %d elements\n",n);
+    for(int i=0; i<n; i++){
+        scanf("%d",&arr[i]);
+    }
+    int maxSum = INT_MIN;
+    for(int start=0; start<n; start++){
+        int currSum = 0;
+        for(int end=start; end<n; end++){
+            currSum+=arr[end];
+            maxSum = max(currSum,maxSum);
+        }
+    }
+    printf("Maximum summation of subarray is %d",maxSum);
+}
+// for printing all subarrays 
+    // for(int start=0; start<n; start++){
+    //     for(int end=start; end<n; end++){
+    //         for(int i=start; i<=end; i++){
+    //             printf("%d",arr[i]);
+    //         }
+    //         printf(" ");
+    //     }
+    //     printf("\n");
+    // }
