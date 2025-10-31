@@ -36,3 +36,22 @@
 //         printf("Not an palindrome");
 //     }
 // }
+
+//Remove duplicates of string
+
+#include<stdio.h>
+int main(){
+    char str[20];
+    char str1[20];
+    int i,j;
+    printf("Enter your string: ");
+    scanf("%s",str);
+    for(i=0; str[i]!='\0';i++){
+        for(j=0; str[j]!='\0'; j++){
+            if(str[i]!=str[j]){
+                str1[i]=str[i];
+            }
+        }
+    }
+    printf("The modified string is:%s",str1);
+}

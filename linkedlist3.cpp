@@ -27,6 +27,7 @@ void create_first(){
             
         }
     }
+
     void display(){
         temp=first;
         do{
